@@ -1,0 +1,117 @@
+"3.3 (created: 2011/11/13 17:32:12)
+
+source! "C:\\Documents and Settings\\b1600442\\_vimperatorrc.local"
+
+" vim: set ft=vimperator:
+
+
+"+----------------------------------------------------------------------------------------+
+" 基本設定
+"+----------------------------------------------------------------------------------------+
+
+" 自動補完
+" set wildoptions=auto
+
+
+"+----------------------------------------------------------------------------------------+
+" キーマップ設定
+"+----------------------------------------------------------------------------------------+
+" <S-J> <S-K> でタブ移動
+map <S-J> <C-p>
+map <S-K> <C-n>
+
+" <C-S-c>でタイトルとURLをコピー
+map <C-S-C> :copy titleAndURL<CR>
+
+" X でタブを閉じる
+" map X D
+
+" クイックヒントを数字から文字に
+set hintchars=ifjklasdhguonmerwc
+
+" クイックヒント 表示は大文字、入力は小文字
+hi Hint z-index:5000; font-size:14px; color:white; background-color:blue; border-color:ButtonShadow; border-width:0px; border-style:solid; padding:0px 2px 0px 2px; position:absolute; font-family: Menlo, Consolas, Monaco, monospace; text-transform: uppercase;
+
+" hi Hint z-index:5000; font-family:monospace; font-size:14px; color:white; background-color:blue; border-color:ButtonShadow; border-width:0px; border-style:solid; padding:0px 1px 0px 1px; position:absolute;
+
+" 選択文字列ののコピーを <C-c> に割り当て
+map <C-c> :echo Yank!<CR>Y
+
+" Shift + ← → で現在のタブの位置変更
+map <S-Right> :tabmove! +1<CR>
+map <S-Left>  :tabmove! -1<CR>
+
+" 最後に閉じたタブを開く(undo)を U にも適用
+map U :undo<CR>
+
+" vimperatorのコマンドライン時はimeをOFFにする
+:style -name commandline-ime chrome://* #liberator-commandline-command input {ime-mode: inactive;}
+
+" autocmd LocationChange www\\.netvibes\\.(co\\.jp|com)/ js modes.passAllKeys = true
+" Clearlyの起動 - eを押して、Claerlyで表示、さらに、Eで保存
+noremap e :js __readable_by_evernote.readable_by_evernote__menu__call(buffer.URL);
+noremap E :js __readable_by_evernote.__readable_by_evernote__launch(true);
+
+" [[ ]] で次のページや前のページにジャンプできるようにする
+set nextpattern=\bnext\b,\bmore\b,next,^次(の)?ページ,\b次.*,→\b,^>$,^(>>|≫)$,^(>|≫),(>|≫)$
+set previouspattern=\bprev|previous\b,prev,^前(の)?ページ,\b前.*,\b←,^<$,^(<<|≪)$,^(<|≪),(<|≪)$
+
+com! -complete=bookmark -nargs=+ ob :o <args>
+com! -complete=history -nargs=+ oh :o <args>
+com! -complete=file -nargs=+ of :o <args>
+
+"=============================================
+" Firefox Config
+"=============================================
+" ダウンロードウィンドウを完了後自動で閉じる
+set! browser.download.manager.closeWhenDone=true
+
+" ダウンロード履歴をFirefox終了時に削除
+set! browser.download.manager.retention=1
+
+" ダウンロードウィンドウを完了後自動で閉じる
+set! browser.download.manager.closeWhenDone=true
+
+" ファイルダウンロード完了時のウイルススキャン機能オフ
+set! browser.download.manager.scanWhenDone=false
+
+" JavaScriptでのウィンドウ移動・リサイズ拒否
+set! dom.disable_window_move_resize=true
+
+" JavaScriptのステータスバー操作を無効化
+set! dom.event.contextmenu.enabled=false
+
+" アドオンインストール時の待ち時間カット
+set! security.dialog_enable_delay=0
+
+" キャッシュをHDDからRAMに
+" set! browser.cache.disk.enable=false
+" set! browser.cache.memory.enable=true
+" 単位(KB)
+" set! browser.cache.memory.capacity=-1
+
+"最小化した時にメモリを開放
+set! config.trim_on_minimize=true
+
+" googleリーダーでvimperatorをオフにする
+autocmd LocationChange .* js modes.passAllKeys = false
+autocmd LocationChange www\\.google\\.(co\\.jp|com)/calendar js modes.passAllKeys = true
+autocmd LocationChange inoreader\.com js modes.passAllKeys = true
+autocmd LocationChange wasavi\.appsweets\.net js modes.passAllKeys = true
+"ignorekeys add ^http://wasavi\\.appsweets\\.net/
+
+"feedSomeKeys.js
+command! -nargs=+ lazy autocmd VimperatorEnter .* <args>
+lazy fmaps -u='mail\.google\.(co\.jp|com)/mail' c / j k n p o u e x s r a # [ ] ? gi gs gt gd ga gc gl - +
+lazy fmaps -u='mail\.google\.(co\.jp|com)/mail/.*/[0-9a-f]+$' c / j n k p n j p k o u e x s r a # [ ] ? gi gs gt gd ga gc?
+lazy fmaps -u='inoreader\.com' ga gf n p f O,o u v j k
+lazy fmaps -u='feedly\.com/index.html' gm ga gg gl / r j k n p O,o v M m x s T,t l f b V c e D,d <ESC>
+
+
+" migemo-hint.js
+" set hintmatching=custom
+
+
+" テキストエリアをxyzzyで編集する Ctrl+I
+" set editor='C:\\bin\\xyzzy\\xyzzy.exe -m html-mode -e (setq\ *default-fileio-encoding*\ *encoding-utf8n*)'
+set editor='C:\\bin\\vim\\gvim.exe -f'
