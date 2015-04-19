@@ -17,11 +17,11 @@ set nobackup
 " (ただし、backup がオンでない限り、バックアップは上書きに成功した後削除される)
 set writebackup
 " バックアップをとる場合
-"set backup
+" set backup
 " バックアップファイルを作るディレクトリ
-"set backupdir=~/backup
+" set backupdir=~/dropbox/soft/vim/backup
 " スワップファイルを作るディレクトリ
-"set directory=~/swap
+set directory=~/dropbox/soft/vim/swap
 
 "----------------------------------------------------
 " 検索関係
@@ -197,7 +197,7 @@ nnoremap Q q
 " neobundle設定
 "----------------------------------------------------
 " 環境変数にgitのパスを通す
-let $PATH = "C:/bin/ConEmuPack/app/nayos3/bin" . ';' . "C:/bin/ConEmuPack/app/git/bin" . ';' . $PATH
+let $PATH = "C:/bin/ConEmuPack/app/nyaos3/bin" . ';' . "C:/bin/ConEmuPack/app/git/bin" . ';' . "C:/bin/ConEmuPack/app/gow" . ';' . $PATH
 
 filetype off
 
@@ -216,12 +216,16 @@ call neobundle#end()
 " NeoBundleを更新するための設定
 
 " NeoBundle で管理するプラグインを追加します。" 読み込むプラグインを記載
-NeoBundle 'Shougo/neocomplete.vim' 
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/vimfiler.vim'
-NeoBundle 'Shougo/vimshell'
-NeoBundle 'haya14busa/vim-migemo'
-NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'https://github.com/Shougo/neocomplete.vim' 
+NeoBundle 'https://github.com/Shougo/unite.vim'
+NeoBundle 'https://github.com/Shougo/vimfiler.vim'
+NeoBundle 'https://github.com/Shougo/vimshell'
+NeoBundle 'https://github.com/haya14busa/vim-migemo'
+" NeoBundle 'https://github.com/itchyny/calendar.vim'
+NeoBundle 'https://github.com/itchyny/lightline.vim'
+NeoBundle 'https://github.com/hsitz/VimOrganizer'
+" NeoBundle 'https://github.com/jceb/vim-orgmode'
+NeoBundle 'https://github.com/mattn/calendar-vim'
 
 " インストールのチェック
 NeoBundleCheck
