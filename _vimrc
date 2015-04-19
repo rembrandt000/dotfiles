@@ -197,7 +197,7 @@ nnoremap Q q
 " neobundleİ’è
 "----------------------------------------------------
 " ŠÂ‹«•Ï”‚Égit‚ÌƒpƒX‚ğ’Ê‚·
-let $PATH = "C:/bin/ConEmuPack/app/nayos2/bin" . ';' . "C:/bin/ConEmuPack/app/git/bin" . ';' . $PATH
+let $PATH = "C:/bin/ConEmuPack/app/nayos3/bin" . ';' . "C:/bin/ConEmuPack/app/git/bin" . ';' . $PATH
 
 filetype off
 

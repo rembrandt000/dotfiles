@@ -1,0 +1,133 @@
+"3.3 (created: 2011/11/13 17:32:12)
+
+source! "C:\\Documents and Settings\\b1600442\\_vimperatorrc.local"
+
+" vim: set ft=vimperator:
+
+
+"+----------------------------------------------------------------------------------------+
+" 基本設定
+"+----------------------------------------------------------------------------------------+
+
+""ブラウザのタイトル変更
+set titlestring=Firefox
+
+"" 自動補完
+set wildoptions=auto
+
+" vimperatorのコマンドライン時はimeをOFFにする
+:style -name commandline-ime chrome://* #liberator-commandline-command input {ime-mode: inactive;}
+
+" クイックヒントを数字から文字に
+set hintchars=ifjklasdhguonmerwc
+
+" クイックヒント 表示は大文字、入力は小文字
+hi Hint z-index:5000; font-size:14px; color:white; background-color:blue; border-color:ButtonShadow; border-width:0px; border-style:solid; padding:0px 2px 0px 2px; position:absolute; font-family: Menlo, Consolas, Monaco, monospace; text-transform: uppercase;
+
+
+com! -sort -complete=bookmark -nargs=+ ob :o <args>
+com! -sort -complete=history -nargs=+ oh :o <args>
+com! -sort -complete=file -nargs=+ of :o <args>
+
+migemo_hint.js
+set guioptions+=mTb 
+set wildoptions=auto
+set complete=sl
+set hintmatching=customcustom
+
+
+"+----------------------------------------------------------------------------------------+
+" vimperator 無効化サイト
+"+----------------------------------------------------------------------------------------+
+autocmd LocationChange .* js modes.passAllKeys = false
+" autocmd LocationChange rmp9r011\\.udc\\.renesas.com js modes.passAllKeys = true
+" autocmd LocationChange mail\\.google\\.(co\\.jp|com)/mail js modes.passAllKeys = true
+autocmd LocationChange www\\.google\\.(co\\.jp|com)/calendar js modes.passAllKeys = true
+autocmd LocationChange inoreader\\.com/ js modes.passAllKeys = true
+autocmd LocationChange drive\\.google\\.(co\\.jp|com) js modes.passAllKeys = true
+autocmd LocationChange docs\\.google\\.(co\\.jp|com) js modes.passAllKeys = true
+autocmd LocationChange wasavi\.appsweets\.net js modes.passAllKeys = true
+"ignorekeys add ^http://wasavi\\.appsweets\\.net/
+
+
+
+"+----------------------------------------------------------------------------------------+
+" seedSomeKeys 設定
+"+----------------------------------------------------------------------------------------+
+"feedSomeKeys.js
+command! -nargs=+ lazy autocmd VimperatorEnter .* <args>
+lazy fmaps -u='mail\.google\.(co\.jp|com)/mail' c / j k n p o u e x s r a # [ ] ? gi gs gt gd ga gc - + gl l A C F f O <Enter> C-<Enter>
+lazy fmaps -u='mail\.google\.(co\.jp|com)/mail/.*/[0-9a-f]+$' c / j n k p n j p k o O u e x s r a # [ ] ? gi gs gt gd ga gc?
+lazy fmaps -u='wri\.pe N I C D S j k h l o e C-I C-
+
+"未反映
+lazy fmaps -u='drive\.google\.(co\.jp|com)' j k x J K A N gn gf gl gd gt T P S D F O c u a r t o n . z s p qq d i /
+lazy fmaps -u='drive\.google\.(co\.jp|com)/.*/[0-9a-f]+$' j k x J K A N gn gf gl gd gt T P S D F O c u a r t o n . z s p qq d i /
+lazy fmaps -u='cloud\.feedly\.com' gm ga gg gl / r j k n p O,o v M m x s T,t l f b V c e D,d <ESC> gm ga gg gl
+lazy fmaps -u='www\.google\.com/calendar' j k n p r T,t 1 2 3 4 5 D,d w m x a c e z <ESC> / q s ? = + p
+" lazy fmaps -u='www\.google\.com/calendar/.*/[0-9a-f]+$' j k n p r T,t 1 2 3 4 5 D,d w m x a c e z <ESC> / q s ? = + p
+
+lazy fmaps -u='www\.commafeed\.com' j k n p o v b m ? A f ga gs gu
+" lazy fmaps -u='^https://inoreader\.com' j k n p o h N P X ! @ e m s l v b A r f / d u y i 1 2 - = ga gf gs gc gu gt .
+" lazy fmaps -u='(fastladder|livedoor)\.com/reader' j k s a p o v c i,p <Space> <S-Space> z b < > q w e,g
+" lazy fmaps -u='www\.google\.(co\.jp|com)/reader/view' -events=vkeypress j k n o p m s v A r S N P X O gh ga gs gt gu u / ? f <PageDown> <PageUp>
+
+
+
+"+----------------------------------------------------------------------------------------+
+" キーマップ設定
+"+----------------------------------------------------------------------------------------+
+" <S-J> <S-K> でタブ移動
+map <S-J> <C-p>
+map <S-K> <C-n>	
+
+" <C-S-c>でタイトルとURLをコピー
+map <C-S-C> :copy titleAndURL<CR>
+
+" X でタブを閉じる
+" map X D
+
+" 選択文字列ののコピーを <C-c> に割り当て
+map <C-c> :echo Yank!<CR>Y
+
+" Shift + ← → で現在のタブの位置変更
+map <S-Right> :tabmove! +1<CR>
+map <S-Left>  :tabmove! -1<CR>
+
+" Clearlyの起動 - eを押して、Claerlyで表示、さらに、Eで保存
+noremap e :js __readable_by_evernote.readable_by_evernote__menu__call(buffer.URL);
+noremap E :js __readable_by_evernote.__readable_by_evernote__launch(true);
+
+" [[ ]] で次のページや前のページにジャンプできるようにする
+set nextpattern=\bnext\b,\bmore\b,next,^次(の)?ページ,\b次.*,→\b,^>$,^(>>|≫)$,^(>|≫),(>|≫)$
+set previouspattern=\bprev|previous\b,prev,^前(の)?ページ,\b前.*,\b←,^<$,^(<<|≪)$,^(<|≪),(<|≪)$
+
+" 補完リストの選択をC-n,C-pで上下移動
+cmap <C-n> <TAB>
+cmap <C-p> <S-TAB>
+
+
+" テキストエリアをxyzzyで編集する Ctrl+I
+" set editor='C:\\bin\\xyzzy\\xyzzy.exe -m html-mode -e (setq\ *default-fileio-encoding*\ *encoding-utf8n*)'
+set editor='C:\\bin\\vim\\gvim.exe -f'
+
+
+"+----------------------------------------------------------------------------------------+
+"+----------------------------------------------------------------------------------------+
+" _vimperatorrcを再読み込み
+map <C-R> :mapc<CR>:cmapc<CR>:imapc<CR>:source ~/_vimperatorrc<CR>
+ 
+" 最後に読み込み完了を表示
+echo "###  Finish loading vimperatorrc.  ###"
+
+" ページロード時にテキストボックスにフォーカスするのを防ぐ
+set focuscontent
+
+" 詳細表示を5行に(最大値=9)
+set verbose=5
+
+
+。
+"",sで設定ファイル再読み込み
+map ,s :so _vimperatorrc
+
