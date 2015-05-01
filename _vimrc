@@ -22,7 +22,10 @@ set writebackup
 " set backupdir=~/dropbox/soft/vim/backup
 " スワップファイルを作るディレクトリ
 set directory=~/dropbox/soft/vim/swap
-
+" undofileを作らない
+" set noundofile
+" undofileを作るディレクトリ
+set undodir=~/dropbox/soft/vim/undo
 "----------------------------------------------------
 " 検索関係
 "----------------------------------------------------
