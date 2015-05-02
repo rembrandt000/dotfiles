@@ -3,3 +3,5 @@
 	email = rembrandt.bluewing@gmail.com
 [color]
 	ui = true
+[core]
+	pager = nkf -w |lv
