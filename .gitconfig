@@ -4,4 +4,4 @@
 [color]
 	ui = true
 [core]
-	pager = nkf -w |lv
+	pager = nkf -w |less
