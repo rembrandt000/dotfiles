@@ -1,0 +1,2 @@
+;;; -*- mode: emacs-lisp; coding: us-ascii -*-
+"%n%T%P%1@%Y/%M/%D(%W)%h:%m %t%[%17(%c %f%) %] %s"

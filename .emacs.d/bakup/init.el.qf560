@@ -1,0 +1,67 @@
+;;---------------------------------------
+;; 環境変数 $PATH 及び ローカルディレクトリの設定
+;(setq my-dropbox-directory "C:/Users/908658/Dropbox/")
+(setq my-dropbox-directory "D:/user/Dropbox/")
+
+(dolist (dir (list
+              (expand-file-name (concat my-dropbox-directory "soft\\emacs\\plugins\\"))
+              (expand-file-name "C:\\bin\\ckw\\bin\\")
+              ))
+  (when (file-exists-p dir)
+    (when (not (member dir exec-path))
+      (setq exec-path (append (list dir) exec-path)))
+    (setenv "PATH" (concat dir ";" (getenv "PATH")))))
+
+;(setq exec-path (append exec-path '("~/.emacs.d/plugins/")))
+; (setenv "PATH" "C:\\bin\\ckw\\bin\\")
+
+
+
+;;---------------------------------------
+;; ~/.emacs.d/site-lisp 以下全部読み込み
+(require 'cl)
+(let ((default-directory (expand-file-name (concat my-dropbox-directory "soft\\emacs\\site-lisp"))))
+;(let ((default-directory (expand-file-name "C:\\Users\\908658\\Dropbox\\soft\\emacs\\site-lisp")))
+  (add-to-list 'load-path default-directory)
+  (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
+      (normal-top-level-add-subdirs-to-load-path)))
+
+
+;;---------------------------------------
+;; package.el setting
+(require 'package)
+;(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(package-initialize)
+;; install if not init-loader
+(unless (package-installed-p 'init-loader)
+  (package-refresh-contents)
+  (package-install 'init-loader))
+
+
+;;---------------------------------------
+;; init-loader
+(require 'init-loader)
+(setq init-loader-show-log-after-init nil)
+;(init-loader-load "C:\\Users\\908658\\Dropbox\\soft\\emacs\\inits")
+(init-loader-load (concat my-dropbox-directory "soft\\emacs\\inits"))
+
+
+;;---------------------------------------
+; Howmの下の.howmか.txtのファイルのみorg-modeにする。
+(add-to-list 'auto-mode-alist '("D:/user/Dropbox/soft/howm/.+\\.howm$" . org-mode))
+(add-to-list 'auto-mode-alist '("D:/user/Dropbox/soft/howm/.+\\.txt$" . org-mode))
+
+
+;; ---------------------------------------
+;; ウィンドウサイズ
+(setq default-frame-alist
+      (append (list
+               '(width . 162)
+               '(height . 77)
+               '(top . 20)
+               '(left . 732)
+               )
+              default-frame-alist))
+
