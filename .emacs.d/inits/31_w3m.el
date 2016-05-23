@@ -4,12 +4,12 @@
 (setq w3m-favicon-cache-expire-wait nil) ;favicon のキャッシュを消さない
 
 (setq
- w3m-profile-directory (concat my-dropbox-directory "soft/emacs/.w3m")
- w3m-default-save-directory (concat my-dropbox-directory "soft/emacs/.w3m")
- w3m-bookmark-file (concat my-dropbox-directory "soft/emacs/.w3m/bookmark.html")
- w3m-session-file (concat my-dropbox-directory "soft/emacs/.w3m/.sessions")
- w3m-arrived-file (concat my-dropbox-directory "soft/emacs/.w3m/.arrived")
- w3m-cookie-file (concat my-dropbox-directory "soft/emacs/.w3m/.cookie")
+ w3m-profile-directory (concat my-dropbox-directory "soft/dotfiles/.emacs.d/.w3m")
+ w3m-default-save-directory (concat my-dropbox-directory "soft/dotfiles/.emacs.d/.w3m")
+ w3m-bookmark-file (concat my-dropbox-directory "soft/dotfiles/.emacs.d/.w3m/bookmark.html")
+ w3m-session-file (concat my-dropbox-directory "soft/dotfiles/.emacs.d/.w3m/.sessions")
+ w3m-arrived-file (concat my-dropbox-directory "soft/dotfiles/.emacs.d/.w3m/.arrived")
+ w3m-cookie-file (concat my-dropbox-directory "soft/dotfiles/.emacs.d/.w3m/.cookie")
  )
 
 

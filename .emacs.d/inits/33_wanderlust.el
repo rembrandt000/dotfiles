@@ -16,16 +16,16 @@
       )
 
 (setq
- elmo-localdir-folder-path (concat my-dropbox-directory "soft/emacs/Mail/")
- elmo-msgdb-directory (concat my-dropbox-directory "soft/emacs/.elmo/")
- wl-address-file (concat my-dropbox-directory "soft/emacs/.addresses")
- wl-folders-file (concat my-dropbox-directory "soft/emacs/.folders")
+ elmo-localdir-folder-path (concat my-dropbox-directory "soft/dotfiles/.emacs.d/Mail/")
+ elmo-msgdb-directory (concat my-dropbox-directory "soft/dotfiles/.emacs.d/.elmo/")
+ wl-address-file (concat my-dropbox-directory "soft/dotfiles/.emacs.d/.addresses")
+ wl-folders-file (concat my-dropbox-directory "soft/dotfiles/.emacs.d/.folders")
  )
 
 ;; パスワードの保存
 ;; M-x elmo-passwd-alist-save
 ;; 保存場所の指定.
-;; (setq elmo-passwd-alist-file-name (concat my-dropbox-directory "soft/emacs/wl-passwd.gpg"))
+;; (setq elmo-passwd-alist-file-name (concat my-dropbox-directory "soft/dotfiles/.emacs.d/wl-passwd.gpg"))
 
 (autoload 'wl "wl" "Wanderlust" t)
 (autoload 'wl-other-frame "wl" "Wanderlust on new frame." t)
