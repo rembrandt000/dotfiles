@@ -1,6 +1,0 @@
-= textfile
-C:\users\Dropbox\text\vim.txt
-C:\users\Dropbox\text\MOLESKIN11S.txt
-C:\home\books\index.html
-[2012-01-17 17:26]
-

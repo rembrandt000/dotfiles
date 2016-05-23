@@ -9,7 +9,7 @@
 ; (global-set-key (kbd "C-c , ,") 'howm-menu)	;; org-modeと重なるのC-zに変更済
 
 ;; howmが生成するファイルの置き場所
-(setq howm-directory (concat my-dropbox-directory "soft/dotfiles/howm/"))
+(setq howm-directory (concat my-dropbox-directory "soft/howm/"))
 
 ;; キーワード一覧
 ;(setq howm-keyword-file ".howm-keys")

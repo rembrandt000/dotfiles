@@ -253,8 +253,10 @@
 ;; (load-theme 'solarized-dark t)
 ;; (load-theme 'gnupack-dark t)
 (cond (rem-u
-      (load-theme 'atom-dark t))
-      (rec-u
+       (load-theme 'atom-dark t))
+      ((eq window-system 'nil)
+       (load-theme 'tango-dark t))
+        (rec-u
       (load-theme ' tango t))
       )
 
