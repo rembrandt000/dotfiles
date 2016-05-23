@@ -1,0 +1,64 @@
+= [memo] [RO] 魔王モロク/ステータス
+1916,魔王モロク
+idle
+取り巻き呼び戻し    1    100%   0sec    10sec    always,0
+ニューマ            1    100%   0sec     1sec    longrangeattacked,0,
+ヒール              9    100%   0sec     2sec    myhpltmaxrate,99,
+
+chase
+フロストダイバー   10     60%   1sec    10sec    always,0,
+
+any
+取り巻き召喚        4    100%  0.7sec  10sec     slavele,1,
+ユピテルサンダー   28     30%  1sec    10sec     always,0,
+アースクエイク      5     10%  0.1sec  30sec     always,0,
+ヘルジャッジメント  5     50%  0.8sec   2sec     always,0,
+ファイアーボルト   10     30%  1sec    10sec     always,0,
+範囲石化攻撃        5    100%  0.5sec  15sec     myhpltmaxrate,80,
+取り巻き呼び戻し    1    100%  0sec    30sec     always,0,
+メテオストーム     11     50%  0.5sec   2sec     always,0,
+
+attack
+ランドプロテクター  3     50%  0sec     5sec     always,0,
+ドラゴンフィアー    2      5%  0sec    10sec     always,0,
+ストーンカース     10     20%  0sec     5sec     always,0,
+ラッシュアタック    5    100%  0sec    30sec     myhpltmaxrate,30,
+パルスストライク    5     20%  0.5sec   5sec     always,0,07
+範囲睡眠攻撃        5     20%  0.5sec   5sec     always,0,02
+範囲沈黙攻撃        5     20%  0.5sec   5sec     always,0,09
+エクスパルシオン    1     10%  1sec    10sec     always,0,
+ブレイクシールド   10     20%  0sec     5sec     always,0,
+イビルランド       10    100%  1sec   600sec     myhpltmaxrate,75,
+
++1917,傷ついた魔王モロク
+idle
+ニューマ            1    100%  0sec     1sec     longrangeattacked,0,
+ヒール              9    100%  0sec     2sec     myhpltmaxrate,99,
+
+chase
+フロストダイバー   10     60%  1sec    10sec     always,0,
+
+any
+取り巻き召喚        4    100%  0.7sec  10sec     slavele,1,
+取り巻き呼び戻し    1    100%  0sec    30sec     always,0,
+ユピテルサンダー   28     30%  1sec    10sec     always,0,
+アースクエイク      5     10%  0.1sec  30sec     always,0,
+メテオストーム     11     50%  0.5sec   2sec     always,0,
+ヘルジャッジメント  5     50%  0.8sec   2sec     always,0,
+ファイアーボルト   10     30%  1sec    10sec     always,0,
+範囲石化攻撃        5    100%  0.5sec  15sec     myhpltmaxrate,80,
+
+attack
+ランドプロテクター  3     50%  0sec     5sec     always,0,
+ドラゴンフィアー    2      5%  0sec    10sec     always,0,
+ストーンカース     10     20%  0sec     5sec     always,0,
+ラッシュアタック    5    100%  0sec    30sec     myhpltmaxrate,30,
+パルスストライク    5     20%  0.5sec   5sec     always,0,07
+範囲睡眠攻撃        5     20%  0.5sec   5sec     always,0,02
+範囲沈黙攻撃        5     20%  0.5sec   5sec     always,0,09
+エクスパルシオン    1     10%  1sec    10sec     always,0,
+ブレイクシールド   10     20%  0sec     5sec     always,0,
+イビルランド       10    100%  1sec   600sec     myhpltmaxrate,75,
+
+[2009-09-16 11:22] 
+

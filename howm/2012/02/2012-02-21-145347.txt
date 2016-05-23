@@ -1,0 +1,95 @@
+= [memo][vim] NERDTree : ツリー型エクスプローラ
+
+exコマンド：
+
+:NERDTree       起動する。すでにNERDTreeが開いている場合はそこへ移動
+:NERDTreeToggle NERDTreeの表示・非表示を切り替える
+
+ノーマルモードコマンド：
+※これらのマッピングはオプションにより全てカスタマイズできる。
+
+q     ディレクトリ  NERDTreeを閉じる
+      の上
+o     ディレクトリ  ディレクトリの展開を切り替える
+      の上
+o     ファイルの上  ファイルを以前のウィンドウで開く
+O     ディレクトリ  ディレクトリを再帰的に展開する
+      の上
+<tab> ファイルの上  ファイルを新しいウィンドウで開く
+t     ファイルの上  ファイルを新しいタブで開く
+t     ディレクトリ  ディレクトリを新しいタブで開く(Explorer)
+      の上
+T     ---           tと同様。ただしカーソルはカレントタブのまま
+x     ---           カーソル位置を含むディレクトリを折りたたむ
+X     ---           子ノードを折りたたむ
+C     ディレクトリ  ツリーのルートにする
+      の上
+cd    ディレクトリ  カレントディレクトリにする
+      の上
+u     ディレクトリ  親ディレクトリをツリーのルートにする
+      の上
+U     ディレクトリ  uと同様。ただし以前のルートを展開したまま
+      の上
+r     ディレクトリ  カーソル位置を含むディレクトリを再帰的に再表示
+      の上
+R     ---           ツリー全体を再表示
+K     ---           カーソルを最初の子ノードに移動
+J     ---           カーソルを最後の子ノードに移動
+p     ---           カーソルを親ディレクトリに移動
+<C-k> ---           カーソルを上の兄弟ノードに移動
+<C-j> ---           カーソルを下の兄弟ノードに移動
+H     ---           隠しファイル(Unixの場合はドットで始まるファイル)の表
+                    示を切り替える
+f     ---           ファイルフィルタを切り替える
+F     ---           NERDTreeShowFilesオプションを切り替える
+e     ---           Explorerを開く
+E     ---           新しいウィンドウでExplorerを開く
+m     ---           ファイルシステムメニューを開く
+!     ---           カレントノードに対してコマンド実行
+?     ---           ヘルプ表示切り替え
+
+マウス操作：
+
+ダブルクリック oと同じ
+ミドルクリック ファイル上では<tab>と同じ。ディレクトリ上ではeと同じ
+
+mコマンドを実行すると次のようなメニューが表示される。
+
+1. Adding     新しいファイルを作成する。ファイル名が「/」で終わる場合は
+   nodes.     ディレクトリが作成される。
+2. Renaming   ファイル／ディレクトリをリネームする。
+   nodes.
+3. Deleting   ファイル／ディレクトリを削除する。
+   nodes.
+
+
+オプション
+
+「~/.vimrc」で次のグローバル変数を設定することでカスタマイズできる。
+
+loaded_nerd_tree            1にするとNERDTreeスクリプトを読み込まない。
+NERDChristmasTree           カラー表示する
+NERDTreeChDirMode           vimのカレントディレクトリを変更するタイミン
+                            グを設定する
+NERDTreeHighlightCursorline カーソル行を強調するか
+NERDTreeIgnore              無視するファイルを設定する
+NERDTreeMouseMode           マウス制御のモード
+NERDTreeShowFiles           ファイルを表示するか
+NERDTreeShowHidden          隠しファイルを表示するか
+NERDTreeSortOrder           ソート順
+NERDTreeSplitVertical       NERDTreeウィンドウを垂直分割で作成するか
+NERDTreeWinPos              NERDTreeウィンドウを横に表示するか上に表示す
+                            るか
+NERDTreeWinSize             NERDTreeウィンドウのサイズ
+
+
+関連スクリプト
+
+opsplorer : teee file explorer
+http://www.vim.org/scripts/script.php?script_id=362
+http://nanasi.jp/articles/vim/opsplorer_vim.html
+vtreeexplorer
+http://www.vim.org/scripts/script.php?script_id=184
+
+------------------------------------------------------------------------
+

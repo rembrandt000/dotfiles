@@ -1,0 +1,9 @@
+= [memo] [Diamond] ホーム画面 左右メニュー変更
+レジストリ
+「HKEY_CURRENT_USER\Software\Microsoft\Today\Keys\112」
+及び
+「HKEY_CURRENT_USER\Software\Microsoft\Today\Keys\113」
+配下の「Default」「Open」キーの作成及び書き換えを行います。
+
+[2009-11-02 19:24] 
+

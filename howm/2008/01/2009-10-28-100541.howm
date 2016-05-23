@@ -1,0 +1,19 @@
+= [memo] FireFox3.x起動高速化
+●Firefoxのメモリ使用法を変更して軽快に動作させる方法
+about:config⇒browser.cache.enable⇒新規作成・整数値⇒（設定名）browser.cache.memory.capacity⇒16384
+PCの搭載メモリ
+256MBの場合：4096、512MBの場合：8192、1GMBの場合：16384
+
+●Firefoxを最小化した際にメモリを解放
+about:config⇒新規作成・真偽値⇒config.trim_on_minimize⇒true
+
+●SQLite OptimizerでSQLite reindex
+firefoxの終了時に自動でSQLite reindexを行ってくれます
+https://addons.mozilla.org/ja/firefox/addon/11198
+
+●「Fireboot」でアドオンから不要な言語ファイルを削除
+http://pearl-white.hp.infoseek.co.jp/fireboot/
+日本語と英語を残して残りの言語ファイルを削除
+
+[2009-10-28 10:05] 
+

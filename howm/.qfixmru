@@ -1,0 +1,34 @@
+~
+C:/bin/xyzzy/data/home/howm-pre-init.l|12|(setq howm-history-file (concat howm-directory "menu/.howm-history"))
+C:/bin/xyzzy/data/home/.xyzzy|12|(setq howm-history-file (concat howm-directory "menu/.howm-history"))
+C:/bin/xyzzy/site-lisp/howm-wrap/readme.txt|125|(require "howm-wrap")
+Dropbox/soft/howm/menu/0000-00-00-000000.txt|12|(setq howm-history-file (concat howm-directory "menu/.howm-history"))
+C:/bin/xyzzy/data/home/_howm-pre-init.l|162|(dolist (m '("cl" "easy-mmode" "font-lock"))
+C:/bin/emacs/share/emacs/24.4/.emacs.d/init/11_helm.el|51|しばし 1.1.0.3 でおつかい下さい。
+C:/bin/xyzzy/site-lisp/howm-wrap/wrap/howm-wrap.l|19|;(global-set-key "\C-x\C-f" 'anything-find-files)
+C:/bin/emacs/share/emacs/24.4/.emacs.d/init/10_anything.el|122|;(require "howm-wrap")
+Dropbox/soft/howm/menu/Menu-00-00-000000.howm|1|= >>> %menu%
+C:/bin/emacs/share/emacs/24.4/.emacs.d/init/24_howm.el|16|;      "\\(^\\|/\\)\\([.]\\|\\(menu\\(_edit\\)?\\|0+-0+-0+\\).howm\\)\\|[~#]$\\|\\.bak$\\|/CVS/")
+Qmem-00-0000-00-00-000000.howm|0|
+Qmem-00-0000-00-00-000000.howm|1|= 
+C:/users/908658/Dropbox/soft/howm/2014/05/2014-05-14-100220.howm|92|= ]2014-05-14] [N-2016-AVM] RH850/F1LのOSやドライバのサポート状況、予定について CL/甲斐様 at CL/C-1
+D:/user/Dropbox/text/ログレス_地下水路の豆知識.txt|19|また、水属性の全体攻撃を持っていて、マジシャンのように防御の低い職であれば一撃死します
+C:/users/908658/Dropbox/soft/howm/2014/04/2014-04-21-125907.howm|3|= [2014-04-21]@ 13:00-15:00 GHS訪問 at CL/C-1応接8
+C:/users/908658/Dropbox/soft/howm/2013/11/2013-11-07-152335.howm|67|= [2014-03-11] 小野崎様より開発ツール各種３月中での要求
+2014/04/2014-04-07-210846.howm|2|= [2014-04-11 09:30-10:00]@ 目標面談
+C:/Users/rembrandt/_vimrc|191|let QFixHowm_MenuCalendar = 0
+D:/user/Dropbox/text/Angband_07.txt|49| |-----+---------------------------------------+-----+-----------------------------------------|
+C:/users/908658/Dropbox/soft/howm/2014/03/2014-03-25-124811.howm|1|= [2014-04-04]@0 10:00-12:00 N向け新規カメラ案件打合せ with 中村M at CL/C-1 [N-2016-AVM] ◆開発日程摺合せ
+C:/users/908658/Dropbox/soft/howm/2014/04/2014-04-04-150258.howm|1|= [2014-04-12]@ 9:50-14:30 全社員研修会 at ホテルグランドパレス
+2014/03/2014-03-30-234001.howm|1|= [2014-04-07]@ 14:00-16:30 郡山所用定例 at CMS/郡山
+2014/03/2014-03-30-234001.howm|1|= [2014-04-07]@ 14:00-17:30 郡山所用定例 at CMS/郡山
+2014/03/2014-03-28-221353.txt|1|= [memp][android] Samba Filesharing でのIP表示方法
+C:/users/908658/Dropbox/soft/howm/2014/03/2014-03-27-180514.howm|1|= [2014-04-09]@ 09:00-10:00 本部長方針説明会 at 4F大会
+C:/users/908658/Dropbox/soft/howm/2014/03/2014-03-27-180514.howm|1|= [2014-04-09]@09:00-10:00 本部長方針説明会 at 4F大会
+C:/users/908658/Dropbox/soft/howm/2014/03/2014-03-27-180701.howm|1|= [2014-03-28]@ 15:00-16:30 正規版 INTEGRITY のドライバ・ライブラリ at CL/C-1
+C:/users/908658/Dropbox/soft/howm/2014/03/2014-03-27-180701.howm|1|= [2014-03-28]@15:00-16:30 正規版 INTEGRITY のドライバ・ライブラリ at CL/C-1
+C:/users/908658/Dropbox/soft/howm/2014/03/2014-03-27-180808.howm|1|= [2014-04-09]@ 15:00-16:00 受注検討会議 at RR
+C:/users/908658/Dropbox/soft/howm/2014/03/2014-03-27-180808.howm|1|= [2014-04-09]@15:00-16:00 受注検討会議 at RR
+C:/bin/vim/plugins/vimdoc-ja/doc/help.jax|1|= [04-09]@09:00-10:00 本部長方針説明会 at 4F大会
+C:/users/908658/Dropbox/soft/howm/2014/03/2014-03-27-180514.howm|1|= [04-09]@09:00-10:00 本部長方針説明会 at 4F大会
+C:/users/908658/Dropbox/soft/howm/2014/03/2014-03-27-180514.howm|1|= [04-09 09:00-10:00 本部長方針説明会 at 4F大会

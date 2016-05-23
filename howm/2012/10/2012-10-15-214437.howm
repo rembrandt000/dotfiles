@@ -1,0 +1,28 @@
+= [memo] robocopy
+robocopy "C:\home" "\\QF560\d\rec\home" "*.*" /s /COPYALL /XO /XA:sh /R:1 /W:2 /FFT /MT /LOG:C:\copylog1.txt
+robocopy "C:\bin" "\\QF560\d\rec\bin" "*.*" /s /COPYALL /XO /XA:sh /R:1 /W:2 /FFT /MT /LOG:C:\copylog2.txt
+robocopy "C:\users\908658" "\\QF560\d\rec\users" "*.*" /s /COPYALL /XO /XA:sh /R:1 /W:2 /FFT /MT /XD "Contacts" "Desktop" "Pictures" "Videos" "Music" "Links" "Searches" "Saved Games" /LOG:C:\copylog3.txt
+robocopy "C:\bin\portableapps\PortableApps\ThunderbirdPortable\Data\profile" D:\users\thunderbird" "*.*" /s /COPYALL /XO /XA:sh /R:1 /W:2 /FFT /MT /LOG:C:\copylog2.txt
+
+robocopy "D:\Project" "\\NAS\Backup\Project" /mir /xa:sh /R:1 /W:2 /FFT
+robocopy "X:\FTP" "Y:\Data\FTP" "*.*" /s /XO /COPYALL /XD ".*" "My Music" "My Virtual Machines" "My Videos" "My Games" /XF ".*" "*.CR2"
+
+各オプションは下記のような意味です。
+/mir : ミラーリングする(/E(空フォルダコピー)と/PURGE(コピー元ないのは削除)を指定したのと同じ)
+/XA:sh : システムファイル(S)と隠しファイル(H)は除外。
+/R:1 : リトライは1回。
+/W:2 : 再試行間隔は2秒。
+/FFT : タイムスタンプ精度を2秒(NAS対策。NASじゃないならいらないかも)
+/MT    : マルチスレッド実行して、同期処理を高速化させてね
+
+/COPYALL :: すべてのファイル情報をコピーする(/COPY:DATSOUと同じ)
+/S :: 空でないサブフォルダをコピーする
+/XD dirs [dirs]... :: 指定されたフォルダ名（パス）と一致するフォルダを除外する
+/XF file [file]... :: 指定されたファイル名（パス，ワイルドカード）と一致するファイルを除外する
+/XO 	古いファイルを除外します (コピー先のファイルの方が新しかったら古いファイルを上書きしない)
+
+
+
+
+[2012-10-15 21:44] 
+

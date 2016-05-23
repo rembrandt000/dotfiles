@@ -1,0 +1,62 @@
+* :memo: grep :command:
+GNU grepコマンドの利用例
+パスワードファイル/etc/passwdからユーザ名testuserの記載された行を取り出す
+grep testuser /etc/passwd
+
+パスワードファイル/etc/passwdからユーザ名testuserの記載された行を取り出す(大文字小文字は問わない)
+grep -i testuser /etc/passwd
+-iが大文字と小文字を区別しないためのオプション
+
+パスワードファイル/etc/passwdからユーザ名testuser1またはtestuser2の記載された行を取り出す(大文字小文字は問わない)
+grep -E -i 'testuser1|testuser2' /etc/passwd
+-Eが正規表現を使うためのオプション。|がor指定。シェルにパイプラインとして解釈されないようにシングルクオーテーションでくくっている
+
+パスワードファイル/etc/passwdからユーザ名testuserから始まっている行を取り出す
+grep ^testuser /etc/passwd
+^が行頭を表す
+
+ファイルfilenameでfooで終わっている行を取り出す
+grep 'foo$' filename
+$が行末を表す。シェルに変数指定と解釈されないようにシングルクオーテーションでくくっている
+
+ファイルfilenameでfooのみが記載されている行を取り出す
+grep '^foo$' filename
+
+ファイルfilenameで空行を取り出す
+grep '^$' filename
+
+ファイルfilenameでTestuserまたはtestuserを含んだ行を取り出す
+grep '[Tt]estuser' filename
+[]が使われた場合、[]の中の文字のどれかに一致する。シェルにグラブとして解釈されないようにシングルクオーテーションでくくっている
+
+ファイルfilanameからtestuserの記載された行を取り出す(大文字小文字は問わない)
+grep '[Tt][Ee][Ss][Tt][Uu][Ss][Ee][Rr]' filename
+
+ファイルfilenameでTestuser0やtestuser2などを含んだ行を取り出す
+grep '[Tt]estusear[0-9]' filename
+[0-9]で[0123456789]と同じ。アルファベットなども同じように指定できる
+
+ファイルfilenameからbutやbatなどbではじまりtで終わる3文字を含む行を取り出す
+grep '\' filename
+\<が単語の始まり、\>が単語の終わりを示す。.は任意の一文字を意味する
+
+ファイルfilenameから2文字のみで構成された行を取り出す
+grep '^..$' filename
+
+ファイルfilenameから.数値ではじまっている行を取り出す
+grep '^\.[0-9]' filename
+\.でドットそのものを示す
+
+ファイル/etc/hostsから192.168.1.254を含む行を取り出す
+grep '192\.168\.1\.254' /etc/hosts
+
+ファイルfilenameからIPアドレスを含む行を取り出す
+grep -E '[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}' filename
+[[:digit:]]は[0-9]を意味する。{1,3}は直前の指定が1以上3以下の繰り返しであることを示す
+
+ファイルfilenameから--test--を含む行を取り出す
+grep -e '--test--' filename
+パターンが-から始まっている場合は-eオプションを指定して利用する
+
+[2010-02-16 17:37] 
+

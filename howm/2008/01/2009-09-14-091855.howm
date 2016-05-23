@@ -1,0 +1,46 @@
+* :memo: XonWindows :win:
+追加マニュアル
+APTによるシステムのアップデート＆メンテナンス
+
+2.5. X on Windows 2
+2.5.1. 設定ファイルの入手
+X on Windows 2には設定ファイルなどが整っておりませんので、まずは弊社FTP サーバーより取得する必要があります。ファイルは以下の場所にありますので、Internet Explorerなどのインターネットブラウザを利用して取得してください。
+
+ftp://ftp.holonlinux.com/pub/XonWindows2/
+以下の
+kagi.txt
+apt.conf
+sources.list
+
+計 3 点です。
+
+
+2.5.2. 設定ファイルの上書き
+apt.conf、sources.listを/etc/apt/にコピーします。
+
+Windows NT4.0/2000/XPでこの作業を実行する際は、「X on Windows INIT」など、自動的に起動しているX on Windows関連のNTサービスを全て手動状態に一時的に切替えて一旦Windowsを再起動し、X on WIndows関連サービスを全て停止してください。作業終了後、NTサービスの設定状態の復元を行ないWindowsの再起動してサービスを開始させます。
+
+$ cp -a apt.conf sources.list /etc/apt/
+
+
+2.5.3. パッケージ公開鍵の取り込み
+安全なパッケージのやり取りのため、apt の持つ公開鍵暗号によるチェックを利用します。これには gpg パッケージが必要です。「Xサーバ」インストールタイプでインストールした場合、gpg パッケージを事前にインストールしてください。
+まず、
+$ gpg
+とだけ実行し初期設定ファイルを用意してください。表示がストップしたら、Control-Dで終了します。
+次に、以下のようにして gpg を利用し公開鍵を取り込みます。
+
+$ gpg --import /tmp/kagi.txt
+
+公開鍵が組みこまれたかどうかを確認するには
+
+$ gpg --list-key
+
+とします。この時に、
+pub 1024D/ED64CA29 2001-02-20 HOLON Linux support <support@holonlinux.com>
+という行が見当たればOKです。
+
+以上でシステムに apt が組み込まれました。
+
+[2007-04-11 18:04] 
+

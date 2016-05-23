@@ -1,0 +1,26 @@
+* :memo: :android: Samba Filesharing でのIP表示方法
+/data/data/com.funkyfresh.samba/files/にアクセスし、samba-rcをroot権限が使えるテキスト編集アプリで開いてください。
+
+テキスト編集アプリで開いたら10数行目に以下の記述があるので
+# add this lineの部分を追加してください。
+
+	SPIDFILE=$PRE/var/locks/smbd.pid
+	NPIDFILE=$PRE/var/locks/nmbd.pid
+
+	case "" in
+		start)
+	         stop
+		     cleanup
+		     rmlogs
+		    $PRE/nmbd -D
+		    $PRE/smbd -D
+		    sleep 1
+		    chmod 644 $NPIDFILE $SPIDFILE     # add this line 
+		    echo ok
+		    ;;
+		stop) 
+
+コードを追加したら保存をして終了です。
+
+[2014-03-28 22:13]
+

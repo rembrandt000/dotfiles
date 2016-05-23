@@ -1,0 +1,30 @@
+= [memo] ResophNotesのショートカットキー一覧
+ショートカットキー	機能
+
+    Ctrl + S	同期
+    Ctrl + N	ノートの新規作成
+    Ctrl + D	ノートの削除
+    Ctrl + O	設定
+    Ctrl + F, Ctrl + L	検索
+    Ctrl + Up	前のノートに移動
+    Ctrl + Down	次のノートに移動
+    Ctrl + Q	終了
+    Ctrl + T	タグの選択
+    Ctrl + Shift + T	タグの編集
+    Ctrl + Shift + S	ノートの順序を変更
+    F11	シングルノートモード
+    Ctrl + Tab　	フィールド移動
+    Ctrl + I	テキストファイルのインポート
+    Ctrl + E	メールで送信
+    Ctrl + P	印刷
+    Alt + P	ピン
+    Ctrl + M	マークダウンを展開表示
+    Enter	ノートに移動
+    Esc	リストに移動
+    F1	ヘルプ
+    Ctrl + Y	タグの選択
+    Ctrl + Shift + Y	タグの編集
+    Ctrl + Shift + U	日付を挿入
+
+[2012-11-13 10:32] 
+

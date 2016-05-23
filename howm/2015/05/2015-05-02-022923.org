@@ -1,0 +1,25 @@
+* :memo: :cygwin:
+** apt-cyg
+https://github.com/kou1okada/apt-cyg
+apt-cyg -m http://ftp.iij.ad.jp/pub/cygwin/ update
+
+**w3m
+Windows7でのCygwin の emacs を動かしdiredなどを起動すると
+Doing vfork: resource temporarily unavailableと言われ落ちてしまう。エラー対策
+
+  1. cygwin関連のプログラムをすべて終了する。
+  2. ashを管理者権限で起動する。
+  3. ash で /bin/rebaseall を実行する。（数分かかる）
+  4. ashを終了して、setup.exeを実行する。
+  5. libncurses7 を reinstall する。
+  6. diredなどでエラーが出ないことを確認する。
+
+
+** ユーザー名が ksugita になっているときの解消方法
+  1. startup_cygwin.exe を実行する
+  2. 下記のコマンドを実行する 
+  3. mkpasswd -l > /etc/passwd 
+  4. mkgroup -l > /etc/group
+  5. startup_cygwin.exeを終了して、もう一度実行する(つまり、再起動する)
+
+

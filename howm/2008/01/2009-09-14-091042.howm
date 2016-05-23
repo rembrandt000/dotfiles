@@ -1,0 +1,55 @@
+= [memo] [firefox] 3.0b4アドオン対応状況
+2.0
+Locale Switcher
+http://benjamin.smedbergs.us/switch-locales/
+
+QuickNote
+http://quicknote.mozdev.org/installation.html
+
+TAGIRI ツールバー
+http://tagiri.jp/toolbar/
+
+User Agent Switcher
+http://chrispederick.com/work/user-agent-switcher/
+
+
+3.0
+ScrapBook
+http://amb.vis.ne.jp/mozilla/scrapbook/
+
+Tab Mix Plus
+http://tmp.garyr.net/
+
+XUL/Migemo
+http://piro.sakura.ne.jp/xul/_xulmigemo.html
+
+Greasemonkey
+http://www.greasespot.net/
+
+foxyproxy
+http://foxyproxy.mozdev.org/
+
+Download Statusbar
+http://downloadstatusbar.mozdev.org/
+
+All-in-One Sidebar
+http://firefox.exxile.net/aios/
+
+Adblock Plus
+http://adblockplus.org/en/
+
+rein
+http://notiz.jp/mozilla/
+
+分割ブラウザ
+https://addons.mozilla.org/ja/firefox/addon/4287
+
+アドレスバーに【about:config】と入力
+『Filter:』というところに『general.useragent.locale』と入力。
+『en-US』を『ja-JP』に変更。
+『Filter:』に『intl.accept_languages』と入力。
+『en-us, en』を『ja, en-us, en』に変更。
+再起動をすると日本語化されてますよ。
+
+[2008-03-18 13:20] 
+

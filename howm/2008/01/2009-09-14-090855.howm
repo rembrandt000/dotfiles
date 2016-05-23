@@ -1,0 +1,7 @@
+= [memo] thunderbird設定/添付ファイルインライン解除
+1.[Thunderbird] - [ツール] - [オプション]で設定画面を開く
+2.[詳細]タブで[設定エディタ]を開く
+3.設定名[mail.content_disposition_type]の値を1にする
+4.Thunderbirdを再起動する
+
+[2008-06-27 10:00]
