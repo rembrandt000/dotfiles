@@ -2,8 +2,24 @@
 ;; This file is generated automatically by emacs-w3m v1.4.554.
 
 (("クラッシュ回復"
-  (22339 43844 433125 600000)
-  (("http://www.magiccircuit.com/emacs-magit%E3%83%A1%E3%83%A2" nil nil "Emacs Magitメモ – magiccircuit.com") ("http://nasa.rejec.net/wp/blog/2015/07/10/magit%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/" (0) (("http://www.magiccircuit.com/emacs-magit%E3%83%A1%E3%83%A2" (:title "Emacs Magitメモ – magiccircuit.com") (0) :window-start 696 :position (48 . 0) :window-hscroll 0)) "Magitの使い方") ("http://c0lvlput3r.blogspot.jp/2013/01/using-git-with-emacs-magit.html" (1) (("http://www.magiccircuit.com/emacs-magit%E3%83%A1%E3%83%A2" (:title "Emacs Magitメモ – magiccircuit.com") (0) :window-start 696 :position (48 . 0) :window-hscroll 0) ("http://nasa.rejec.net/wp/blog/2015/07/10/magit%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/" (:title "Magitの使い方") (1) :window-start 2 :position (26 . 8) :window-hscroll 0)) "emacsでgitを使う(magit) | コンピュータ忘備録") ("http://www-he.scphys.kyoto-u.ac.jp/member/shotakaha/dokuwiki/doku.php?id=toolbox:emacs:magit:start" (2) (("http://www.magiccircuit.com/emacs-magit%E3%83%A1%E3%83%A2" (:title "Emacs Magitメモ – magiccircuit.com") (0) :window-start 696 :position (48 . 0) :window-hscroll 0) ("http://nasa.rejec.net/wp/blog/2015/07/10/magit%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/" (:title "Magitの使い方") (1) :window-start 2 :position (26 . 8) :window-hscroll 0) ("http://c0lvlput3r.blogspot.jp/2013/01/using-git-with-emacs-magit.html" (:title "emacsでgitを使う(magit) | コンピュータ忘備録") (2) :window-start 1 :position (1 . 0) :window-hscroll 0)) "Magitの使い方 [ShotakahaDokuWiki]") ("http://w.koshigoe.jp/study/?%5Bgit%5D%5Bemacs%5D+magit%A5%E1%A5%E2" (3) (("http://www.magiccircuit.com/emacs-magit%E3%83%A1%E3%83%A2" (:title "Emacs Magitメモ – magiccircuit.com") (0) :window-start 696 :position (48 . 0) :window-hscroll 0) ("http://nasa.rejec.net/wp/blog/2015/07/10/magit%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/" (:title "Magitの使い方") (1) :window-start 2 :position (26 . 8) :window-hscroll 0) ("http://c0lvlput3r.blogspot.jp/2013/01/using-git-with-emacs-magit.html" (:title "emacsでgitを使う(magit) | コンピュータ忘備録") (2) :window-start 1 :position (1 . 0) :window-hscroll 0) ("http://www-he.scphys.kyoto-u.ac.jp/member/shotakaha/dokuwiki/doku.php?id=toolbox:emacs:magit:start" (:title "Magitの使い方 [ShotakahaDokuWiki]") (3) :window-start 1699 :position (95 . 0) :window-hscroll 0)) "KOSHIGOE学習帳 - [git][emacs] magitメモ"))
+  (22339 44594 457171 900000)
+  (("http://w.koshigoe.jp/study/?%5Bgit%5D%5Bemacs%5D+magit%A5%E1%A5%E2" (3) (("http://www.magiccircuit.com/emacs-magit%E3%83%A1%E3%83%A2" (:title "Emacs Magitメモ – magiccircuit.com") (0) :window-start 696 :position (48 . 0) :window-hscroll 0) ("http://nasa.rejec.net/wp/blog/2015/07/10/magit%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/" (:title "Magitの使い方") (1) :window-start 2 :position (26 . 8) :window-hscroll 0) ("http://c0lvlput3r.blogspot.jp/2013/01/using-git-with-emacs-magit.html" (:title "emacsでgitを使う(magit) | コンピュータ忘備録") (2) :window-start 1 :position (1 . 0) :window-hscroll 0) ("http://www-he.scphys.kyoto-u.ac.jp/member/shotakaha/dokuwiki/doku.php?id=toolbox:emacs:magit:start" (:title "Magitの使い方 [ShotakahaDokuWiki]") (3) :window-start 1699 :position (95 . 0) :window-hscroll 0)) "KOSHIGOE学習帳 - [git][emacs] magitメモ"))
+  nil)
+ ("削除セッション-1"
+  (22339 44594 447171 300000)
+  (("http://www.magiccircuit.com/emacs-magit%E3%83%A1%E3%83%A2" nil nil "Emacs Magitメモ – magiccircuit.com"))
+  nil)
+ ("削除セッション-2"
+  (22339 44521 988026 900000)
+  (("http://nasa.rejec.net/wp/blog/2015/07/10/magit%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/" (0) (("http://www.magiccircuit.com/emacs-magit%E3%83%A1%E3%83%A2" (:title "Emacs Magitメモ – magiccircuit.com") (0) :window-start 696 :position (48 . 0) :window-hscroll 0)) "Magitの使い方"))
+  nil)
+ ("削除セッション-3"
+  (22339 44509 451309 900000)
+  (("http://c0lvlput3r.blogspot.jp/2013/01/using-git-with-emacs-magit.html" (1) (("http://www.magiccircuit.com/emacs-magit%E3%83%A1%E3%83%A2" (:title "Emacs Magitメモ – magiccircuit.com") (0) :window-start 696 :position (48 . 0) :window-hscroll 0) ("http://nasa.rejec.net/wp/blog/2015/07/10/magit%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/" (:title "Magitの使い方") (1) :window-start 2 :position (26 . 8) :window-hscroll 0)) "emacsでgitを使う(magit) | コンピュータ忘備録"))
+  nil)
+ ("削除セッション-4"
+  (22339 44501 718867 600000)
+  (("http://www-he.scphys.kyoto-u.ac.jp/member/shotakaha/dokuwiki/doku.php?id=toolbox:emacs:magit:start" (2) (("http://www.magiccircuit.com/emacs-magit%E3%83%A1%E3%83%A2" (:title "Emacs Magitメモ – magiccircuit.com") (0) :window-start 696 :position (48 . 0) :window-hscroll 0) ("http://nasa.rejec.net/wp/blog/2015/07/10/magit%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/" (:title "Magitの使い方") (1) :window-start 2 :position (26 . 8) :window-hscroll 0) ("http://c0lvlput3r.blogspot.jp/2013/01/using-git-with-emacs-magit.html" (:title "emacsでgitを使う(magit) | コンピュータ忘備録") (2) :window-start 1 :position (1 . 0) :window-hscroll 0)) "Magitの使い方 [ShotakahaDokuWiki]"))
   nil)
  ("自動保存-1"
   (22339 39677 892391 600000)
@@ -25,25 +41,9 @@
   (22338 54857 420674 600000)
   (("http://shobonnexus.com/show.php?id=17761" (1) (("about://bookmark/" (:title "Bookmarks") (0) :window-start 1 :position (7 . 4) :window-hscroll 0) ("http://shobonnexus.com/" (:title "Shobon-next - RAW Manga Link collection") (1) :referer "about://bookmark/" :window-start 1739 :position (74 . 19) :window-hscroll 0 :forms ([w3m-form-object internal "http://shobonnexus.com/none" nil application/x-www-form-urlencoded (1 (:value ("" . "お気に入り登録")))] [w3m-form-object get "http://shobonnexus.com/public/search.php" nil application/x-www-form-urlencoded (2 (:value ("q" . "キーワード検索")) 3 (:value ("")))]))) "[フクダーダ] 許嫁協定 第01-07巻 - は 行 - Shobon-next - RAW Manga Link collection"))
   nil)
- ("削除セッション-1"
+ ("削除セッション-5"
   (22338 54785 796880 600000)
   (("http://shobonnexus.com/show.php?id=17765" (1) (("about://bookmark/" (:title "Bookmarks") (0) :window-start 1 :position (7 . 4) :window-hscroll 0) ("http://shobonnexus.com/" (:title "Shobon-next - RAW Manga Link collection") (1) :window-start 1 :position (26 . 99) :window-hscroll 0)) "週刊少年ジャンプ 2016年25号 - 漫画雑誌 - Shobon-next - RAW Manga Link collection"))
-  nil)
- ("削除セッション-2"
-  (22338 54783 879922 600000)
-  (("http://shobonnexus.com/show.php?id=17764" (1) (("about://bookmark/" (:title "Bookmarks") (0) :window-start 1 :position (7 . 4) :window-hscroll 0) ("http://shobonnexus.com/" (:title "Shobon-next - RAW Manga Link collection") (1) :window-start 1 :position (26 . 99) :window-hscroll 0)) "[ツジトモ×綱本将也] GIANT KILLING -ジャイアントキリング- 第01-40巻 - さ 行 - Shobon-next - RAW Manga Link collection"))
-  nil)
- ("削除セッション-3"
-  (22338 54783 275620 600000)
-  (("http://shobonnexus.com/show.php?id=17763" (1) (("about://bookmark/" (:title "Bookmarks") (0) :window-start 1 :position (7 . 4) :window-hscroll 0) ("http://shobonnexus.com/" (:title "Shobon-next - RAW Manga Link collection") (1) :window-start 1 :position (26 . 99) :window-hscroll 0)) "週刊ビッグコミックスピリッツ 2016年26号 - 漫画雑誌 - Shobon-next - RAW Manga Link collection"))
-  nil)
- ("削除セッション-4"
-  (22338 54782 347156 600000)
-  (("http://shobonnexus.com/show.php?id=17762" (1) (("about://bookmark/" (:title "Bookmarks") (0) :window-start 1 :position (7 . 4) :window-hscroll 0) ("http://shobonnexus.com/" (:title "Shobon-next - RAW Manga Link collection") (1) :window-start 1 :position (26 . 99) :window-hscroll 0)) "ヤングマガジン 2016年25号 - 漫画雑誌 - Shobon-next - RAW Manga Link collection"))
-  nil)
- ("削除セッション-5"
-  (22338 54781 247607 100000)
-  (("http://shobonnexus.com/show.php?id=17761" (1) (("about://bookmark/" (:title "Bookmarks") (0) :window-start 1 :position (7 . 4) :window-hscroll 0) ("http://shobonnexus.com/" (:title "Shobon-next - RAW Manga Link collection") (1) :window-start 1 :position (26 . 99) :window-hscroll 0)) "[フクダーダ] 許嫁協定 第01-07巻 - は 行 - Shobon-next - RAW Manga Link collection"))
   nil)
  ("ネット小説更新チェック"
   (21841 56928 230819 300000)
