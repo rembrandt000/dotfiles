@@ -1,7 +1,11 @@
 ;;; .sessions  -*- mode: emacs-lisp; coding: iso-2022-7bit -*-
 ;; This file is generated automatically by emacs-w3m v1.4.554.
 
-(("自動保存-1"
+(("クラッシュ回復"
+  (22339 40894 394437 0)
+  (("http://www.magiccircuit.com/emacs-magit%E3%83%A1%E3%83%A2" nil nil "Emacs Magitメモ – magiccircuit.com") ("http://nasa.rejec.net/wp/blog/2015/07/10/magit%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/" (0) (("http://www.magiccircuit.com/emacs-magit%E3%83%A1%E3%83%A2" (:title "Emacs Magitメモ – magiccircuit.com") (0) :window-start 696 :position (48 . 0) :window-hscroll 0)) "Magitの使い方"))
+  nil)
+ ("自動保存-1"
   (22339 39677 892391 600000)
   (("http://blog.kzfmix.com/entry/1334196627" nil nil "magit(emacs+git)は快適な予感がする"))
   0)
