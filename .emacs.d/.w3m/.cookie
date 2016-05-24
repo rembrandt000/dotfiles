@@ -1,7 +1,9 @@
 ;;; .cookie  -*- mode: emacs-lisp; coding: iso-2022-7bit -*-
 ;; This file is generated automatically by emacs-w3m v1.4.554.
 
-(["https://ja.wikipedia.org/wiki/FTP%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E4%B8%80%E8%A6%A7" "ja.wikipedia.org" t "HttpOnly" nil "/" 0 "Sat, 18 Jun 2016 00:00:00 GMT" nil]
+(["http://newnvs.ddo.jp/newnvs/pclogin.php" "newnvs.ddo.jp" nil "cookie_passwd" "bluewing" "/newnvs/" 0 "Wed, 22-Jun-2016 23:45:54 GMT" nil]
+["http://newnvs.ddo.jp/newnvs/pclogin.php" "newnvs.ddo.jp" nil "cookie_readerID" "r3749b" "/newnvs/" 0 "Wed, 22-Jun-2016 23:45:54 GMT" nil]
+["https://ja.wikipedia.org/wiki/FTP%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E4%B8%80%E8%A6%A7" "ja.wikipedia.org" t "HttpOnly" nil "/" 0 "Sat, 18 Jun 2016 00:00:00 GMT" nil]
 ["https://ja.wikipedia.org/wiki/FTP%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E4%B8%80%E8%A6%A7" "ja.wikipedia.org" t "WMF-Last-Access" "17-May-2016" "/" 0 "Sat, 18 Jun 2016 00:00:00 GMT" nil]
 ["http://dq10data.ldblog.jp/archives/45611001.html" "dq10data.ldblog.jp" nil "ldblog_u" "182.250.250.198.1463116458513334" "/" 0 "Thu, 11-Aug-16 05:14:18 GMT" nil]
 ["http://matome.naver.jp/odai/2141273800334454601" "matome.naver.jp" nil "matome-shuffle-init" "true" "/shuffle/" 0 "Sat, 28-May-2016 04:03:57 GMT" nil]
@@ -112,8 +114,6 @@
 ["https://girlsss.xyz/17241.html" ".girlsss.xyz" nil "__cfduid" "d0373aedf072f4083e3e696ada9478a361461815760" "/" 0 "Fri, 28-Apr-17 03:56:00 GMT" nil]
 ["https://girlsss.xyz/17241.html" ".girlsss.xyz" nil "HttpOnly" nil "/" 0 "Fri, 28-Apr-17 03:56:00 GMT" nil]
 ["http://r.gnavi.co.jp/ippin/article-4380/" "r.gnavi.co.jp" nil "ippin_report_history" "4380" "/ippin/" 0 "Fri, 28-Apr-2017 03:57:10 GMT" nil]
-["http://newnvs.ddo.jp/newnvs/pclogin.php" "newnvs.ddo.jp" nil "cookie_readerID" "r3749b" "/newnvs/" 0 "Sat, 18-Jun-2016 00:01:49 GMT" nil]
-["http://newnvs.ddo.jp/newnvs/pclogin.php" "newnvs.ddo.jp" nil "cookie_passwd" "bluewing" "/newnvs/" 0 "Sat, 18-Jun-2016 00:01:49 GMT" nil]
 ["http://ncode.syosetu.com/n4527bc/318/" ".syosetu.com" nil "nlist1" "63ir.8u-9mt7.bw-5t1f.53-44m8.fh-7pth.8n-cwhb.40-8hcd.52-2bvv.2x-9su7.5j-88yc.3k-btet.8f-5wpw.1g-7use.3a-6dj3.3a-1r6q.4t-43yr.j-57k6.4h-6h7h.by-6uia.1v-5oag.5y-4snt.b-2tyu.3t-6iky.1x-5avs.4r-5wc3.2u-32ra.2p-6nqx.51-hg74.d-3y5t.5z-bs3b.2y" "/" 0 "Fri, 19-May-2017 00:03:08 GMT" nil]
 ["http://ncode.syosetu.com/n4527bc/318/" ".syosetu.com" nil "ks2" "5cq6ub5ka5rs" "/" 0 "Fri, 19-May-2017 00:03:08 GMT" nil]
 ["http://www.google.co.jp/search?ie=UTF-8&oe=UTF-8&q=ftp+sync&gws_rd=cr&ei=D1Q-V9ngDoHAmAWNrJeAAQ" ".google.co.jp" nil "NID" "79=OU_ubIhOFkGLO8M4qanTwpBILz-F9WCU-TkB6W5zLk6QZlLLRI70nzoGtUsZQqp2CdXk5iHa3uh8KHVn9m6Flw8jyKBsn_SHBurDWkSwMjtlhAvkh-1VaCAaWfTik7MX" "/" 0 "Sat, 19-Nov-2016 00:02:24 GMT" nil]

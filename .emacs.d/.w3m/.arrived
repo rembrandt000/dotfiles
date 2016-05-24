@@ -1,22 +1,40 @@
 ;;; .arrived  -*- mode: emacs-lisp; coding: iso-2022-7bit -*-
 ;; This file is generated automatically by emacs-w3m v1.4.554.
 
-(("http://shobonnexus.com/show.php?id=17761"
-  "[フクダーダ] 許嫁協定 第01-07巻 - は 行 - Shobon-next - RAW Manga Link collection"
+(("http://blog.kzfmix.com/entry/1334196627"
+  "magit(emacs+git)は快適な予感がする"
   nil
-  (22338 54827 555749 600000)
+  (22339 39423 598105 500000)
   nil
   nil)
  ("http://shobon-next.com"
   "shobon-next.com"
   nil
-  (22338 54810 828390 100000)
+  (22339 38487 727015 100000)
   nil
   nil)
  ("about://bookmark"
   "Bookmarks"
   nil
-  (22338 54809 263608 100000)
+  (22339 38485 379010 600000)
+  nil
+  nil)
+ ("http://newnvs.ddo.jp/newnvs/newnv/showNewNovels.php"
+  "ネット小説更新チェック"
+  nil
+  (22339 38454 29546 300000)
+  nil
+  nil)
+ ("http://newnvs.ddo.jp/newnvs/pclogin.php"
+  "ネット小説更新チェック"
+  nil
+  (22339 38450 462739 500000)
+  nil
+  nil)
+ ("http://shobonnexus.com/show.php?id=17761"
+  "[フクダーダ] 許嫁協定 第01-07巻 - は 行 - Shobon-next - RAW Manga Link collection"
+  nil
+  (22338 54827 555749 600000)
   nil
   nil)
  ("http://shobonnexus.com/show.php?id=17762"
@@ -173,18 +191,6 @@
   "男なら一国一城の主を目指さなきゃね - 第三十六話　ベグリッツ"
   nil
   (22333 629 522282 400000)
-  nil
-  nil)
- ("http://newnvs.ddo.jp/newnvs/newnv/showNewNovels.php"
-  "ネット小説更新チェック"
-  nil
-  (22333 623 828288 500000)
-  nil
-  nil)
- ("http://newnvs.ddo.jp/newnvs/pclogin.php"
-  "ネット小説更新チェック"
-  nil
-  (22333 621 262324 700000)
   nil
   nil)
  ("http://shobonnexus.com/show.php?id=17684"
@@ -2993,11 +2999,5 @@
   "Bash: Configuring the Command Line Interface"
   nil
   (22297 27536 276049 500000)
-  nil
-  nil)
- ("http://www.google.co.jp/search?q=cygwin+rcfile&oe=UTF-8"
-  "cygwin rcfile - Google 検索"
-  nil
-  (22297 27527 551177 100000)
   nil
   nil))
