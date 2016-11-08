@@ -5,7 +5,7 @@ let fullpagescrollpercent = 100
 set autohidecursor
 "set noinsertmappings
 "スムーズスクロール
-set nosmoothscroll
+set smoothscroll
 "開いた時のフォーカスを無効
 set noautofocus
 "let locale = "jp"
