@@ -9,7 +9,7 @@ set smoothscroll
 "開いた時のフォーカスを無効
 set noautofocus
 "let locale = "jp"
-let blacklists = ["chrome://*","https://mail.google.com/*","http://feedly.com/*","https://calendar.google.com/*","https://drive.google.com/*"]
+let blacklists = ["chrome://*","https://mail.google.com/*","http://feedly.com/*","https://calendar.google.com/*","https://drive.google.com/*","linux-station-vnc"]
 let mapleader = ","
 "==={Hint a Hit}===
 let hintcharacters = "fdsawerjkiop"
