@@ -1,7 +1,7 @@
 #!/bin/sh
 # パッケージの更新
 apt update
-apt upgrade
+apt upgrade -y
 # ストレージアクセス設定とシンボリックリンク
 termux-setup-storage
 ln -s ./storage/downloads/vimrc.txt ~/.vimrc
@@ -15,3 +15,5 @@ chmod 600 ~/.ssh/authorized_keys
 chmod 700 ~/.ssh
 # 公開鍵をDownloadsディレクトリにコピー
 cp ~/.ssh/id_rsa ~./storage/downloads
+# extrakeyのカスタマイズ
+cat "extra-keys = [['ESC','CTRL','ALT','HOME','UP','END','PGUP','DEL'],['TAB','F11',F12','LEFT','DOWN','RIGHT','PGDN','BKSP']]" >> ~/.termux/termux.properties
